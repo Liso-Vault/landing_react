@@ -1,6 +1,16 @@
 import React from "react";
+import ReactGA from "react-ga";
 
 import { Apple, GooglePlay, Windows } from "iconsax-react";
+
+function gaTrackEvent(data) {
+  ReactGA.event({
+    category: "Dowmload",
+    action: "Initiate Download",
+    label: "Download Button",
+    value: data,
+  });
+}
 
 export const Download = ({ refDownload }) => {
   return (
@@ -17,6 +27,7 @@ export const Download = ({ refDownload }) => {
       <div className="flex flex-wrap text-white gap-5 items-center">
         <a
           href="https://apps.apple.com/us/app/liso-password-manager/id1621225567"
+          onClick={gaTrackEvent('apple')}
           className="btn-elevated flex justify-center w-[250px]"
           target="_blank"
           rel="noreferrer"
@@ -25,6 +36,7 @@ export const Download = ({ refDownload }) => {
         </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.liso.app"
+          onClick={gaTrackEvent('android')}
           className="btn-elevated flex justify-center w-[250px]"
           target="_blank"
           rel="noreferrer"
@@ -33,6 +45,7 @@ export const Download = ({ refDownload }) => {
         </a>
         <a
           href="https://github.com/Liso-Vault/app/releases/download/0.6.0%2B33/Liso_v0.6.0+33-Windows.exe"
+          onClick={gaTrackEvent('windows')}
           className="btn-elevated flex justify-center w-[250px]"
           target="_blank"
           rel="noreferrer"

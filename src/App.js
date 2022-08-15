@@ -1,4 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import ReactGA from "react-ga";
+
 // COMPONENTS
 import { FeatureRow } from "./components/FeatureRow";
 import { Hero } from "./components/Hero";
@@ -8,7 +10,9 @@ import { Spacer } from "./components/Spacer";
 import { Download } from "./components/Download";
 import { Footer } from "./components/Footer";
 import { FeatureGrid } from "./components/FeatureGrid";
+import { CallToAction } from "./components/CallToAction";
 
+// ICONS
 import {
   Airplane,
   Code1,
@@ -28,9 +32,14 @@ import {
   ShieldTick,
   Strongbox2,
 } from "iconsax-react";
-import { CallToAction } from "./components/CallToAction";
 
+// FUNCTIONS
 function App() {
+  // Google Analytics
+  useEffect(() => {
+    ReactGA.initialize("UA-184101390-1");
+  }, []);
+
   const DownloadSectionRef = useRef(null);
   const FeaturesSectionRef = useRef(null);
 

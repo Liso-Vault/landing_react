@@ -1,9 +1,16 @@
 import React from "react";
+import ReactGA from "react-ga";
 import Logo from "../assets/logo.png";
 
 export const NavBar = ({ refDownload }) => {
   function scrollToDownloadSection(params) {
-    refDownload.current.scrollIntoView({ behavior: "smooth", block: 'center' });
+    refDownload.current.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    ReactGA.event({
+      category: "Download",
+      action: "Scroll to Download",
+      label: "Download Button",
+    });
   }
 
   return (

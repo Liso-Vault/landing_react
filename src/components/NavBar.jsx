@@ -11,7 +11,7 @@ export const NavBar = ({ refDownload }) => {
       <img src={Logo} alt="Liso Password Manager" className="h-10 pr-3"></img>
       <h1 className="w-full text-2xl font-bold text-white">Liso</h1>
       <button
-        className="btn-elevated w-[350px] md:w-[200px]"
+        className="btn-elevated w-[350px] md:w-[220px]"
         onClick={scrollToDownloadSection}
       >
         Free Download

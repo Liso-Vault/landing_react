@@ -1,6 +1,6 @@
 {
-  "homepage": "https://liso-vault.github.io/landing_react",
   "name": "landing-react",
+  "homepage": "https://liso.dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

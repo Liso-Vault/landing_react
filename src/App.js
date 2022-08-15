@@ -42,6 +42,7 @@ function App() {
       <Mockup />
       <Spacer classes="h-[50px] md:h-[100px]" />
       <FeatureRow
+        refFeatures={FeaturesSectionRef}
         data={{
           title: "Access and manage your passwords on any device",
           body: "Liso is available for download on iPhone, iPad, Android, Mac, and Windows. Access everything on the go, even when you're offline.",
@@ -92,7 +93,6 @@ function App() {
       <Spacer classes="h-[50px] md:h-[100px]" />
       <Download refDownload={DownloadSectionRef} />
       <FeatureGrid
-        refFeatures={FeaturesSectionRef}
         data={[
           {
             title: "Autofill",

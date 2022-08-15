@@ -36,13 +36,13 @@ export const Footer = () => {
         </a>
         <LinkNewTab
           data={{
-            url: "/",
+            url: "/terms",
             label: "Terms of Use",
           }}
         />
         <LinkNewTab
           data={{
-            url: "/",
+            url: "/privacy",
             label: "Privacy Policy",
           }}
         />

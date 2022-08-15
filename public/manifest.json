@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Liso Password Manager",
+  "name": "The secure way to save your passwords and files",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-elevated {
+    @apply bg-[#02f297] hover:bg-[#28ffbb] text-black font-medium py-2 rounded-full w-[200px] mx-auto;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .btn-outlined {
+    @apply bg-transparent hover:bg-gray-800 text-[#02f297] font-bold py-2 rounded-full w-[200px] mx-auto border border-[#02f297];
+  }
+}
+
+@layer components {
+  .txt-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#00ff9d] to-[#007a8d];
+  }
+}
+
+@layer components {
+  .txt-gradient-2 {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#00ff9d] to-[#00765c];
+  }
+}
+
+@layer components {
+  .txt-gradient-3 {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] to-[#00ffb3];
+  }
+}
+
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-bl from-[#000000] to-[#102121];
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-black rounded-2xl shadow-2xl;
+  }
 }

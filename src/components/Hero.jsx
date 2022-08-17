@@ -29,10 +29,10 @@ export const Hero = ({ refDownload, refFeatures }) => {
           The secure way to save your passwords and files
         </h1>
         <p className="text-gray-300 md:text-2xl">
-          Liso is not just a Password Manager. But also lets you store and
-          manage a wide array of digital records like Passports, Social Security
-          Numbers, Bank Accounts, Credit Cards, Medical Records, Wi-Fi
-          Passwords, and more.
+          Liso is not just a Password Manager, but also a flexible data
+          management app that can store a wide array of information like Passports,
+          Social Security Numbers, Bank Accounts, Credit Cards, Medical Records,
+          Wi-Fi Passwords, and more.
         </p>
         <div className="flex gap-2 md:gap-5 flex-wrap mx-auto">
           <button className="btn-elevated" onClick={scrollToDownloadSection}>

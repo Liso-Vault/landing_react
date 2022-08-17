@@ -28,6 +28,12 @@ export const Footer = () => {
             label: "Roadmap",
           }}
         />
+        <LinkNewTab
+          data={{
+            url: "https://github.com/Liso-Vault/app/blob/master/SECURITY.md",
+            label: "Security",
+          }}
+        />
         <a
           href="mailto:dev@liso.dev"
           className="text-white hover:text-green-200 hover:underline text-sm"
@@ -36,13 +42,13 @@ export const Footer = () => {
         </a>
         <LinkNewTab
           data={{
-            url: "/terms",
+            url: "https://github.com/Liso-Vault/app/blob/master/TERMS.md",
             label: "Terms of Use",
           }}
         />
         <LinkNewTab
           data={{
-            url: "/privacy",
+            url: "https://github.com/Liso-Vault/app/blob/master/PRIVACY.md",
             label: "Privacy Policy",
           }}
         />

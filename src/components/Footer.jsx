@@ -18,6 +18,12 @@ export const Footer = () => {
         />
         <LinkNewTab
           data={{
+            url: "https://github.com/Liso-Vault/app/blob/master/FAQS.md",
+            label: "FAQs",
+          }}
+        />
+        <LinkNewTab
+          data={{
             url: "https://github.com/Liso-Vault/app/blob/master/CHANGELOG.md",
             label: "Changelog",
           }}
